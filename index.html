@@ -1,0 +1,92 @@
+<html>
+<head>
+    <link rel="stylesheet" href="styleGB.css">
+</head>
+<body>
+    <div id="corpoMaior">
+        <div id="linhaTopo">
+            <p class="topoCantoL"></p><p class="topoCentro"></p><p class="topoCantoR"></p>
+
+            <table id="telaFora">
+                <tr>
+                    <td id="battery">
+                        <p id="luzBateria"></p>
+                        <p id="labelBateria">BATTERY</p>
+                    </td>
+                    <td ><img id="telaDentro"></td>
+                </tr>
+            </table>
+        </div>
+        <table id="btns">
+            <tr>
+                <td class="SETAS">
+                    <table id="btnSetas" cellspacing="0">
+                        <tr>
+                            <td id="bordaLeft1"></td>
+                            <td id="btnSetaTop" onmousedown="clickSetaTop()" onmouseup="desclickSetaTop()"></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td id="btnSetaLeft" onmousedown="clickSetaLeft()" onmouseup="desclickSetaLeft()"></td>
+                            <td id="btnSetaMeio"></td>
+                            <td id="btnSetaRight" onmousedown="clickSetaRight()" onmouseup="desclickSetaRight()"></td>
+                        </tr>
+                        <tr>
+                            <td id="bordaLeft2"></td>
+                            <td id="btnSetaBot" onmousedown="clickSetaBot()" onmouseup="desclickSetaBot()"></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="AB">
+                    <table id="btnABTop" cellspacing="0">
+                        <tr>
+                            <td class="btnABLargo"></td>
+                            <td id="btnA1" class="btnABEsqSup" onmousedown="clickA()" onmouseup="desclickA()"></td>
+                            <td id="btnA2"class="btnABDirSup" onmousedown="clickA()" onmouseup="desclickA()"></td>
+                        </tr>
+                    </table>
+                    <table id="btnABMeio" cellspacing="0">
+                        <tr>
+                            <td id="btnB1" class="btnABEsqSup" onmousedown="clickB()" onmouseup="desclickB()"></td>
+                            <td id="btnB2" class="btnABDirSup" onmousedown="clickB()" onmouseup="desclickB()"></td>
+                            <td class="btnABMeioInv"></td>
+                            <td id="btnA3" class="btnABEsqInf" onmousedown="clickA()" onmouseup="desclickA()"></td>
+                            <td id="btnA4" class="btnABDirInf" onmousedown="clickA()" onmouseup="desclickA()"></td>
+                        </tr>
+                    </table>
+                    <table id="btnABBot" cellspacing="0">
+                        <tr>
+                            <td id="btnB3" class="btnABEsqInf" onmousedown="clickB()" onmouseup="desclickB()"></td>
+                            <td id="btnB4" class="btnABDirInf" onmousedown="clickB()" onmouseup="desclickB()"></td>
+                            <td class="btnABLargo"><span id="AText">A</span></td>
+                        </tr>
+                    </table>
+                    <span id="BText">B</span>
+                </td>
+            </tr>
+        </table>
+        <div id="btnSelSta">
+            <div id="Sel">
+                <span id="Select"></span>
+                <span class="SelectLabel">SELECT</span>
+            </div>
+            <div id="Sta">
+                <span id="Start"></span>
+                <span class="StartLabel">START</span>
+            </div>
+        </div>
+        <div id="SaidaSom">
+            <span class="linhaSom"></span>
+            <span class="linhaSom"></span>
+            <span class="linhaSom"></span>
+            <span class="linhaSom"></span>
+            <span class="linhaSom"></span>
+            <span class="linhaSom"></span>
+        </div>
+    </div>
+
+    <button onclick="ligaDesliga()">Teste</button>
+    <script src="GBJavaScript.js"></script>
+</body>
+</html>
