@@ -16,6 +16,8 @@ var btnB1 = document.getElementById("btnB1");
 var btnB2 = document.getElementById("btnB2");
 var btnB3 = document.getElementById("btnB3");
 var btnB4 = document.getElementById("btnB4");
+var start = document.getElementById("Start");
+var select = document.getElementById("Select");
 
 function ligaDesliga() {
     if(ligado == false) {
@@ -130,18 +132,23 @@ function desclickSetaRight() {
 }
 
 function clickA() {
-    btnA1.style.backgroundColor = "darkred";
-    btnA2.style.backgroundColor = "darkred";
-    btnA3.style.backgroundColor = "darkred";
-    btnA4.style.backgroundColor = "darkred";
-    btnA1.style.borderTop = "unset";
-    btnA1.style.borderLeft = "unset"; 
-    btnA2.style.borderTop = "unset";
-    btnA3.style.borderLeft = "unset";
-    btnA4.style.borderRight = "2px solid black";
-    btnA4.style.borderBottom = "2px solid black";
-    btnA3.style.borderBottom = "2px solid black";
-    btnA2.style.borderRight = "2px solid black";
+    btnA1.style.borderTop = "4px solid rgba( 87, 86, 85 , .5)";
+    btnA1.style.borderLeft = "4px solid rgba( 87, 86, 85 , .5)"; 
+    btnA2.style.borderTop = "4px solid rgba( 87, 86, 85 , .5)";
+    btnA3.style.borderLeft = "4px solid rgba( 87, 86, 85 , .5)";
+    btnA2.style.borderRight = "unset";
+    btnA3.style.borderBottom = "unset";
+    btnA4.style.border = "unset";
+    btnA1.style.backgroundColor = "#ed0000";
+    btnA2.style.backgroundColor = "#ed0000";
+    btnA3.style.backgroundColor = "#ed0000";
+    btnA4.style.backgroundColor = "#ed0000";
+    btnA2.style.boxShadow = "unset";
+    btnA4.style.boxShadow = "unset";
+    btnA3.style.boxShadow = "unset";
+    if (ligado == true) {
+        telaGB.src = "https://em.wattpad.com/a6d4df2d1d37d6e11ffff7b1c92bef35960e1e67/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f46466171655642547367566838773d3d2d3630393539303139382e313534353135626336323332396237353731313435363631323134362e676966";
+    }
 }
 
 function desclickA() {
@@ -156,21 +163,28 @@ function desclickA() {
     btnA2.style.borderRight = "unset";
     btnA3.style.borderBottom = "unset";
     btnA4.style.border = "unset";
+    btnA2.style.boxShadow = "2px 2px 3px #575655";
+    btnA3.style.boxShadow = "2px 2px 3px #575655";
+    btnA4.style.boxShadow = "2px 2px 3px #575655";
 }
 
 function clickB() {
-    btnB1.style.backgroundColor = "darkred";
-    btnB2.style.backgroundColor = "darkred";
-    btnB3.style.backgroundColor = "darkred";
-    btnB4.style.backgroundColor = "darkred";
-    btnB1.style.borderTop = "unset";
-    btnB1.style.borderLeft = "unset"; 
-    btnB2.style.borderTop = "unset";
-    btnB3.style.borderLeft = "unset";
-    btnB4.style.borderRight = "2px solid black";
-    btnB4.style.borderBottom = "2px solid black";
-    btnB3.style.borderBottom = "2px solid black";
-    btnB2.style.borderRight = "2px solid black";
+    btnB1.style.backgroundColor = "#ed0000";
+    btnB2.style.backgroundColor = "#ed0000";
+    btnB3.style.backgroundColor = "#ed0000";
+    btnB4.style.backgroundColor = "#ed0000";
+    btnB1.style.borderTop = "4px solid rgba( 87, 86, 85 , .5)";
+    btnB1.style.borderLeft = "4px solid rgba( 87, 86, 85 , .5)"; 
+    btnB2.style.borderTop = "4px solid rgba( 87, 86, 85 , .5)";
+    btnB3.style.borderLeft = "4px solid rgba( 87, 86, 85 , .5)";
+    btnB2.style.borderRight = "unset";
+    btnB3.style.borderBottom = "unset";
+    btnB4.style.border = "unset";
+    btnB2.style.boxShadow = "unset";
+    btnB4.style.boxShadow = "unset";
+    btnB3.style.boxShadow = "unset";
+    document.getElementById("btnABMeioInv").style.width = "23px";
+    document.getElementById("btnBLargo").setAttribute("class", "btnBLargo");
 }
 
 function desclickB() {
@@ -185,4 +199,25 @@ function desclickB() {
     btnB2.style.borderRight = "unset";
     btnB3.style.borderBottom = "unset";
     btnB4.style.border = "unset";
+    btnB2.style.boxShadow = "2px 2px 3px #575655";
+    btnB3.style.boxShadow = "2px 2px 3px #575655";
+    btnB4.style.boxShadow = "2px 2px 3px #575655";
+    document.getElementById("btnABMeioInv").style.width = "25px";
+    document.getElementById("btnBLargo").setAttribute("class", "btnaBLargo");
+}
+
+function clickSelect() {
+    select.style.boxShadow = "inset 3px 1px 6px";
+}
+
+function desclickSelect() {
+    select.style.boxShadow = "2px -2px 6px";
+}
+
+function clickStart() {
+    start.style.boxShadow = "inset 3px 1px 6px";
+}
+
+function desclickStart() {
+    start.style.boxShadow = "2px -2px 6px";
 }

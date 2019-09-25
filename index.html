@@ -50,7 +50,7 @@
                         <tr>
                             <td id="btnB1" class="btnABEsqSup" onmousedown="clickB()" onmouseup="desclickB()"></td>
                             <td id="btnB2" class="btnABDirSup" onmousedown="clickB()" onmouseup="desclickB()"></td>
-                            <td class="btnABMeioInv"></td>
+                            <td id="btnABMeioInv"></td>
                             <td id="btnA3" class="btnABEsqInf" onmousedown="clickA()" onmouseup="desclickA()"></td>
                             <td id="btnA4" class="btnABDirInf" onmousedown="clickA()" onmouseup="desclickA()"></td>
                         </tr>
@@ -59,7 +59,7 @@
                         <tr>
                             <td id="btnB3" class="btnABEsqInf" onmousedown="clickB()" onmouseup="desclickB()"></td>
                             <td id="btnB4" class="btnABDirInf" onmousedown="clickB()" onmouseup="desclickB()"></td>
-                            <td class="btnABLargo"><span id="AText">A</span></td>
+                            <td class="btnABLargo" id="btnBLargo"><span id="AText">A</span></td>
                         </tr>
                     </table>
                     <span id="BText">B</span>
@@ -68,11 +68,11 @@
         </table>
         <div id="btnSelSta">
             <div id="Sel">
-                <span id="Select"></span>
+                <span id="Select" onmousedown="clickSelect()" onmouseup="desclickSelect()"></span>
                 <span class="SelectLabel">SELECT</span>
             </div>
             <div id="Sta">
-                <span id="Start"></span>
+                <span id="Start" onmousedown="clickStart()" onmouseup="desclickStart()"></span>
                 <span class="StartLabel">START</span>
             </div>
         </div>
