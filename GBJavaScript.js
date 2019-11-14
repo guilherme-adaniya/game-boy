@@ -21,15 +21,19 @@ var select = document.getElementById("Select");
 
 function ligaDesliga() {
     if(ligado == false) {
-        telaGB.src = "https://i.imgur.com/rqjMIVn.gif";
+        //telaGB.src = "https://i.imgur.com/rqjMIVn.gif";
+        telaGB.src = "GIFs/rqjMIVn.gif";
         telaGB.style.backgroundColor = "#cbcbac";
         telaGB.style.backgroundSize = "contain";
         luzBat.style.backgroundColor = "red";
         ligado = true;
-        setTimeout(function() {telaGB.src="https://media.giphy.com/media/JSj5bkV1UIaXH8iCZM/giphy.gif";}, 2000);
-        setTimeout(function() {telaGB.src="https://media.giphy.com/media/dBfkKQgrvyBYwrMNYy/giphy.gif";}, 15000);
-        setTimeout(function() {telaGB.src="https://jogoveio.com.br/wp-content/uploads/2017/05/pokemon-red-jogoveio.gif";}, 22000);
+        // setTimeout(function() {telaGB.src="https://media.giphy.com/media/JSj5bkV1UIaXH8iCZM/giphy.gif";}, 2000);
+        // setTimeout(function() {telaGB.src="https://media.giphy.com/media/dBfkKQgrvyBYwrMNYy/giphy.gif";}, 15000);
+        // setTimeout(function() {telaGB.src="https://jogoveio.com.br/wp-content/uploads/2017/05/pokemon-red-jogoveio.gif";}, 22000);
         //https://i.gifer.com/39BF.gif
+        setTimeout(function() {telaGB.src="GIFs/giphy.gif";}, 2000);
+        setTimeout(function() {telaGB.src="GIFs/giphy2.gif";}, 15000);
+        setTimeout(function() {telaGB.src="GIFs/pokemon-red-jogoveio.gif";}, 22000);
     } else {
         telaGB.src = "";
         telaGB.style.backgroundColor = "goldenrod";
@@ -147,7 +151,7 @@ function clickA() {
     btnA4.style.boxShadow = "unset";
     btnA3.style.boxShadow = "unset";
     if (ligado == true) {
-        telaGB.src = "https://em.wattpad.com/a6d4df2d1d37d6e11ffff7b1c92bef35960e1e67/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f46466171655642547367566838773d3d2d3630393539303139382e313534353135626336323332396237353731313435363631323134362e676966";
+        telaGB.src = "GIFs/profOak.gif";
     }
 }
 
